@@ -183,7 +183,7 @@ def format_repo_row(repo: dict[str, Any]) -> str:
     repo_url = repo.get("html_url", f"https://github.com/{repo.get('full_name', '')}")
 
     project_cell = f"[{escape_table(name)}]({repo_url})"
-    return f"| {project_cell} | {description} | {escape_table(language)} | \u2b50 {stars} |"
+    return f"| {project_cell} | {description} | {escape_table(language)} | {stars} |"
 
 
 def build_profile_section(
@@ -196,20 +196,18 @@ def build_profile_section(
     """Build the content to insert between AUTO-GITHUB markers."""
     lines = []
 
-    # Summary line
+    # Summary line - clean one-liner
     lines.append(
-        f"\U0001f52d \u516c\u5f00\u4ed3\u5e93 **{public_repos_count}** \u00b7 "
-        f"\U0001f465 Followers **{followers}** \u00b7 "
-        f"\u2b50 \u7d2f\u8ba1\u83b7\u5f97 Star **{total_stars}**"
+        f"\U0001f4e6 **{public_repos_count}** public repos \u00b7 "
+        f"\U0001f465 **{followers}** followers \u00b7 "
+        f"\u2b50 **{total_stars}** total stars"
     )
     lines.append("")
 
-    # Projects table
+    # Projects table - cleaner layout
     if top_repos:
-        lines.append("### \U0001f4cc \u7cbe\u9009\u516c\u5f00\u9879\u76ee")
-        lines.append("")
-        lines.append("| \u9879\u76ee | \u7b80\u4ecb | \u6280\u672f | Star |")
-        lines.append("|:---|---:|:---:|:---:|")
+        lines.append("| Project | Description | Lang | \u2b50 |")
+        lines.append("|:--------|:------------|:----:|--:|")
         for repo in top_repos:
             lines.append(format_repo_row(repo))
         lines.append("")
@@ -218,7 +216,7 @@ def build_profile_section(
     now = now_in_timezone(tz)
     tz_name = tz.tzname(None) if hasattr(tz, "tzname") else str(tz)
     lines.append(
-        f"<sub>\U0001f550 \u6700\u540e\u66f4\u65b0\uff1a{format_datetime(now, tz)} \u00b7 {tz_name}</sub>"
+        f"<sub>\U0001f550 Updated {format_datetime(now, tz)} \u00b7 {tz_name}</sub>"
     )
 
     return "\n".join(lines) + "\n"
