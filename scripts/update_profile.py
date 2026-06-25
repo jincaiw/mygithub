@@ -17,8 +17,7 @@ import sys
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
-from typing import Any, Optional
-
+from typing import Any
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
@@ -110,7 +109,7 @@ def paginate(url: str, token: str) -> list[Any]:
             break
         # Check for next page in Link header
         link_header = headers.get("Link", "")
-        next_url: Optional[str] = None
+        next_url: str | None = None
         for part in link_header.split(","):
             part = part.strip()
             if 'rel="next"' in part:
@@ -165,7 +164,7 @@ def compute_stats(repos: list[dict[str, Any]]) -> tuple[int, list[dict[str, Any]
 # ── Markdown formatting ───────────────────────────────────────────────────
 
 
-def escape_table(text: Optional[str]) -> str:
+def escape_table(text: str | None) -> str:
     """Escape pipe characters and trim for markdown table cell safety."""
     if not text:
         return ""
@@ -257,7 +256,7 @@ def update_readme(readme_path: str, new_content: str) -> bool:
     before = content[: start_idx + len(MARKER_START)]
     after = content[end_idx:]
 
-    new_readme = before + "\n" + new_content + "\n" + after
+    new_readme = before + "\n" + new_content + "\n" + MARKER_END + "\n" + after
 
     if new_readme == content:
         return False
