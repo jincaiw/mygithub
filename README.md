@@ -1,8 +1,22 @@
 # My GitHub Profile
 
 <!-- AUTO-GITHUB:START -->
-工作流首次运行后将在这里生成 GitHub 数据。
-<!-- AUTO-GITHUB:END -->
+🔭 公开仓库 **24** · 👥 Followers **9** · ⭐ 累计获得 Star **1**
+
+### 📌 精选公开项目
+
+| 项目 | 简介 | 技术 | Star |
+|:---|---:|:---:|:---:|
+| [Netconfighub](https://github.com/jincaiw/Netconfighub) | — | Go | ⭐ 1 |
+| [mygithub](https://github.com/jincaiw/mygithub) | Personal profile and GitHub activity | Python | ⭐ 0 |
+| [mybooks](https://github.com/jincaiw/mybooks) | 多本书籍仓库，每本书独立维护，共享 CI/CD 流水线 | Python | ⭐ 0 |
+| [sftpxy](https://github.com/jincaiw/sftpxy) | SFTPxy managed file transfer platform | Go | ⭐ 0 |
+| [filebox](https://github.com/jincaiw/filebox) | Lightweight file and text sharing service | Go | ⭐ 0 |
+| [GoDDI](https://github.com/jincaiw/GoDDI) | Self-hosted DNS, DHCP and IPAM management platform in a single Go binary | Go | ⭐ 0 |
+
+<sub>🕐 最后更新：2026-06-25 10:54 · Asia/Shanghai</sub>
+
+
 
 ---
 
