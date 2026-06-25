@@ -3,8 +3,8 @@ name: Update Profile README
 "on":
   workflow_dispatch: null
   schedule:
-    # UTC 00:17 = Beijing 08:17 (UTC+8)
-    - cron: "17 0 * * *"
+    # UTC 00:17 = Beijing 08:17 (UTC+8), every Monday
+    - cron: "17 0 * * 1"
 
 permissions:
   contents: write
