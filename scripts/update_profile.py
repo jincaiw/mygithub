@@ -256,7 +256,7 @@ def update_readme(readme_path: str, new_content: str) -> bool:
     before = content[: start_idx + len(MARKER_START)]
     after = content[end_idx:]
 
-    new_readme = before + "\n" + new_content + "\n" + MARKER_END + "\n" + after
+    new_readme = before + "\n" + new_content + MARKER_END + after
 
     if new_readme == content:
         return False
