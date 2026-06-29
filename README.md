@@ -3,18 +3,18 @@
 Building tools with Go and Python. Focused on infrastructure, networking, and developer tooling.
 
 <!-- AUTO-GITHUB:START -->
-📦 **24** public repos · 👥 **9** followers · ⭐ **1** total stars
+📦 **18** public repos · 👥 **8** followers · ⭐ **1** total stars
 
 | Project | Description | Lang | ⭐ |
 |:--------|:------------|:----:|--:|
 | [Netconfighub](https://github.com/jincaiw/Netconfighub) | — | Go | 1 |
+| [go-oxidized](https://github.com/jincaiw/go-oxidized) | Go port of Oxidized - network device configuration backup tool | Go | 0 |
+| [walog](https://github.com/jincaiw/walog) | Jason.wa的博客 | Astro | 0 |
+| [wadoc](https://github.com/jincaiw/wadoc) | 王记文档 - 个人知识库与技术文档 | — | 0 |
 | [jincaiw](https://github.com/jincaiw/jincaiw) | Personal profile and GitHub activity | Python | 0 |
 | [mybooks](https://github.com/jincaiw/mybooks) | 多本书籍仓库，每本书独立维护，共享 CI/CD 流水线 | Python | 0 |
-| [sftpxy](https://github.com/jincaiw/sftpxy) | SFTPxy managed file transfer platform | Go | 0 |
-| [filebox](https://github.com/jincaiw/filebox) | Lightweight file and text sharing service | Go | 0 |
-| [GoDDI](https://github.com/jincaiw/GoDDI) | Self-hosted DNS, DHCP and IPAM management platform in a single Go binary | Go | 0 |
 
-<sub>🕐 Updated 2026-06-25 14:51 · Asia/Shanghai</sub>
+<sub>🕐 Updated 2026-06-29 13:01 · Asia/Shanghai</sub>
 <!-- AUTO-GITHUB:END -->
 
 <details>
